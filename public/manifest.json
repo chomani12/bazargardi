@@ -1,0 +1,22 @@
+{
+    "name": "گەردی بازاڕ - Gardi Bazar",
+    "short_name": "Gardi Bazar",
+    "description": "باشترین شوێن بۆ کڕینی گۆشتی تازە",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0f0f0f",
+    "theme_color": "#1a1a1a",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/img/logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
