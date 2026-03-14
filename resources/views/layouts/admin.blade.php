@@ -220,8 +220,10 @@
             color: #666 !important;
         }
 
-        .form-label {
-            color: #aaa;
+        .form-label,
+        .form-check-label,
+        .text-muted {
+            color: #fff !important;
         }
 
         .badge-status {
