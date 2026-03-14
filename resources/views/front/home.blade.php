@@ -6,7 +6,7 @@
         <div class="carousel-inner">
             @foreach($sliders as $i => $slider)
                 <div class="carousel-item {{ $i === 0 ? 'active' : '' }}">
-                    <div class="hero-slide" style="background-image: url('/{{ $slider->image }}');">
+                    <div class="hero-slide" style="background-image: url('{{ Str::startsWith($slider->image, 'img/') ? '/' . $slider->image : '/storage/' . $slider->image }}');">
                         <div class="caption">
                             <h2 class="animate-in">{{ $slider->title_ku }}</h2>
                             <a href="/products" class="btn btn-gold mt-3 animate-in">
