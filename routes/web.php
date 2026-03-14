@@ -12,6 +12,21 @@ use App\Http\Controllers\Admin\SettingController;
 
 /*
 |--------------------------------------------------------------------------
+| Temporary Password Reset Route (REMOVE AFTER USE!)
+|--------------------------------------------------------------------------
+*/
+Route::get('/reset-admin-password', function () {
+    $user = \App\Models\User::where('email', 'admin@gardibazzar.com')->first();
+    if ($user) {
+        $user->password = \Illuminate\Support\Facades\Hash::make('password123');
+        $user->save();
+        return 'Admin password has been reset! Email: admin@gardibazzar.com | Password: password123';
+    }
+    return 'Admin user not found!';
+});
+
+/*
+|--------------------------------------------------------------------------
 | Frontend Routes
 |--------------------------------------------------------------------------
 */
